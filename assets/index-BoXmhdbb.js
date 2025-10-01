@@ -15002,12 +15002,13 @@ const pE = um("inline-flex items-center justify-center gap-2 whitespace-nowrap r
 ac.displayName = "Button";
 const hE = "/assets/character-4-B0spyWfu.png",
   mE = "/assets/tweet-YZi.png",
-  vE = "/assets/tweet-cz-1.png",
-  gE = "/assets/tweet-cz-2.png",
-  amE = "/assets/1.png",
-  avE = "/assets/2.png",
-  agE = "/assets/3.png",
-  ajE = "/assets/4.png",
+  vE = "/assets/tweet-cz-2.png",
+  gE = "/assets/tweet-cz-1.png",
+  aaE = "/assets/1.png",
+  abE = "/assets/5.png",
+  acE = "/assets/3.png",
+  adE = "/assets/4.png",
+  aeE = "/assets/2.png",
   yE = () => {
     const e = w.useRef(null);
     return w.useEffect(() => {
@@ -15083,21 +15084,23 @@ const hE = "/assets/character-4-B0spyWfu.png",
     })
   },
   cvf = [{
-    img: amE,
+    img: aaE,
   }, {
-    img: avE,
+    img: abE,
   }, {
-    img: agE,
-  },{
-  img: ajE,
-}],
+    img: acE,
+  }, {
+    img: adE,
+  }, {
+    img: aeE,
+  }],
   SVE = () => E.jsxs("section", {
     className: "py-24 px-4 bg-card/50 overflow-hidden",
     children: [E.jsxs("div", {
       className: "max-w-7xl mx-auto mb-12",
       children: [E.jsx("h2", {
         className: "text-5xl md:text-7xl font-black text-center mb-4 text-primary",
-        children: "Proof of 4"
+        children: "Gallery of 4"
       }), E.jsx("p", {
         className: "text-center text-secondary text-xl font-bold",
         children: "#Unstoppable4"
@@ -15107,7 +15110,7 @@ const hE = "/assets/character-4-B0spyWfu.png",
       children: E.jsx("div", {
         className: "flex animate-scroll-left",
         children: [...cvf, ...cvf].map((e, t) => E.jsxs("div", {
-          className: "flex-shrink-0 w-128 h-128 bg-background border-4 border-primary rounded-2xl flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(0,255,65,0.5)]",
+          className: "flex-shrink-0 mx-4 w-128 h-128 bg-background border-4 border-primary rounded-2xl flex flex-col items-center justify-center transition-all duration-300 hover:scale-110 hover:shadow-[0_0_30px_rgba(0,255,65,0.5)]",
           children: [
             E.jsx("div", {
               // className: "text-8xl mb-4",
@@ -15304,18 +15307,13 @@ const hE = "/assets/character-4-B0spyWfu.png",
           })]
         }, t))
       })
-    }), E.jsx("div", {
-      className: "text-center mt-16",
-      children: E.jsx("p", {
-        className: "text-accent text-xl font-bold mb-6",
-        children: "Join the chaos. Be part of the 4."
-      })
     })]
   }),
   EE = () => E.jsxs("main", {
     className: "min-h-screen bg-background font-comic",
-    children: [E.jsx(yE, {}), E.jsx(SVE, {}), E.jsx(wE, {}), E.jsx(xE, {}), E.jsx(SE, {})]
-  }),
+    children: [E.jsx(yE, {}), E.jsx(SVE, {}), E.jsx(wE, {}), E.jsx(xE, {}), E.jsx(SE, {}), E.jsx(awE, {})]
+  }
+),
   CE = () => {
     const e = fv();
     return w.useEffect(() => {
@@ -15351,6 +15349,73 @@ const hE = "/assets/character-4-B0spyWfu.png",
             path: "*",
             element: E.jsx(CE, {})
           })]
+        })
+      })]
+    })
+  }),
+  auf = [{
+    icon: "/assets/icon/telegram.svg",
+    link: "https://t.me",
+    title: "Telegram",
+  }, {
+    icon: "/assets/icon/x.svg",
+    link: "https://t.me",
+    title: "Twitter",
+  }, {
+    icon: "/assets/icon/dextools.svg",
+    link: "https://dextools.io",
+    title: "Dextools",
+  }, {
+    icon: "/assets/icon/dexscreener.svg",
+    link: "https://dexscreener.com",
+    title: "Dexscreener",
+  }],
+  awE = () => E.jsx("section", {
+    className: "py-24 px-4 bg-card/50",
+    children: E.jsxs("div", {
+      className: "max-w-7xl mx-auto",
+      children: [E.jsx("h2", {
+        className: "text-5xl md:text-7xl font-black text-center mb-20 text-primary",
+        children: "SOCILAS"
+      }), E.jsx("div", {
+        className: "grid grid-cols-1 md:grid-cols-4 gap-8",
+        children: auf.map((e, t) => {
+          const n = e.icon;
+          return E.jsxs("div", {
+            className: "relative group animate-fade-in",
+            style: {
+              animationDelay: `${t*.2}s`
+            },
+            children: [E.jsxs("a", {
+              className: "bg-background rounded-xl p-8 text-center",
+              children: [E.jsx("div", {
+                className: "flex justify-center mb-6 hover:scale-105",
+                children: E.jsx("a", {
+                  href: e.link,
+                  target: "_blank",
+                  className: "w-20 h-20 rounded-full bg-primary/20 flex items-center justify-center border-2 border-primary",
+                  children: E.jsx("img", {
+                    src: n,
+                    style: {width : "30px"},
+                  })
+                })
+              }), E.jsx("h3", {
+                className: "text-3xl font-black text-secondary mb-3",
+                children: e.title
+              }), E.jsx("p", {
+                className: "text-foreground/80 text-lg",
+                children: e.description
+              })]
+            }), t < auf.length - 1 && E.jsx("div", {
+              className: "hidden md:block absolute top-1/2 -right-4 w-8 h-0.5 bg-primary/50"
+            })]
+          }, t)
+        })
+      }), E.jsx("div", {
+        className: "text-center mt-16",
+        children: E.jsx("p", {
+          className: "text-accent text-xl font-bold mb-6",
+          children: "Join the chaos. Be part of the 4."
         })
       })]
     })
