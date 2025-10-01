@@ -15100,7 +15100,7 @@ const hE = "/assets/character-4-B0spyWfu.png",
       className: "max-w-7xl mx-auto mb-12",
       children: [E.jsx("h2", {
         className: "text-5xl md:text-7xl font-black text-center mb-4 text-primary",
-        children: "Gallery of 4"
+        children: "GALLERY"
       }), E.jsx("p", {
         className: "text-center text-secondary text-xl font-bold",
         children: "#Unstoppable4"
