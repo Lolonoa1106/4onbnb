@@ -15376,7 +15376,7 @@ const hE = "/assets/character-4-B0spyWfu.png",
       className: "max-w-7xl mx-auto",
       children: [E.jsx("h2", {
         className: "text-5xl md:text-7xl font-black text-center mb-20 text-primary",
-        children: "SOCILAS"
+        children: "SOCIAL"
       }), E.jsx("div", {
         className: "grid grid-cols-1 md:grid-cols-4 gap-8",
         children: auf.map((e, t) => {
